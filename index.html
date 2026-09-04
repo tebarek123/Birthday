@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#54233d">
+    <title>A Little Birthday Note</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section class="shell" aria-label="Birthday message maker">
+            <div class="intro">
+                <div>
+                    <p class="eyebrow">One very important question</p>
+                    <h1>Is it your birthday?</h1>
+                    <p class="intro-copy">There is only one way to find out. Be honest, but be quick.</p>
+                </div>
+                <div class="stamp">special<br>delivery</div>
+            </div>
+
+            <div class="workspace">
+                <h2>Just say yes</h2>
+                <p class="form-note">Press the button three times to unlock your birthday message.</p>
+                <div class="game-area" id="game-area">
+                    <button class="game-button" id="birthday-button" type="button">Yes, it is!</button>
+                </div>
+                <p class="tries" id="tries" aria-live="polite">Attempts: 0 of 3</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="card" id="card" role="dialog" aria-modal="true" aria-labelledby="card-title" aria-hidden="true">
+        <div class="card-paper">
+            <button class="close" id="close-card" type="button" aria-label="Close card">&times;</button>
+            <div class="heart" aria-hidden="true">&#9825;</div>
+            <p class="eyebrow">A message just for you</p>
+            <h2 id="card-title">Happy Birthday!</h2>
+            <p id="card-message">I hope today reminds you how loved, appreciated, and wonderfully special you are. May this new year bring you peaceful moments, big laughs, and every good thing you have been hoping for, Happy Birthday!Happy Birthday!</p>
+            <p class="from" id="card-from">May Good luck and happiness follow you always.</p>
+        </div>
+    </section>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+</body>
+</html>
